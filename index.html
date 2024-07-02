@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Pastas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .producto {
+            margin-bottom: 10px;
+        }
+        .resultado {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Tienda de Pastas</h1>
+        <div class="producto">
+            <label for="productos">Producto:</label>
+            <select id="productos" class="form-control">
+                <option value="Sorrentinos">Sorrentinos - $3000</option>
+                <option value="Humita">Humita - $1500</option>
+                <option value="Ravioles">Ravioles - $2500</option>
+                <option value="Tallarines">Tallarines - $2000</option>
+                <option value="Bologñesa">Bologñesa - $1800</option>
+                <option value="Scarparo">Scarparo - $2200</option>
+            </select>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" class="form-control" value="1" min="1">
+            <button id="agregarBtn" class="btn btn-primary mt-2">Agregar al Carrito</button>
+        </div>
+        <div class="resultado mt-4" id="resultado">
+            <h2>Productos en el carrito:</h2>
+            <ul id="carrito" class="list-group">
+            </ul>
+            <button id="finalizarBtn" class="btn btn-success mt-3">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
